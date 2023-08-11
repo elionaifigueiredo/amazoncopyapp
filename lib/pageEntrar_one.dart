@@ -30,14 +30,14 @@ class _PageEntrarState extends State<PageEntrar> {
       body: Container(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Image.asset(
               'images/amazoncopy.png',
               width: 200,
-            ).animate().fadeIn(duration: 2000.ms).slide(duration: 2000.ms),
-            SizedBox(
+            ).animate().fadeIn(duration: 1000.ms).slide(duration: 1000.ms),
+            const SizedBox(
               height: 35,
             ),
             Container(
@@ -69,7 +69,7 @@ class _PageEntrarState extends State<PageEntrar> {
                                 hintText: "Email ",
                                 hintStyle: TextStyle(color: Colors.grey[400])),
                           ),
-                        ),
+                        ).animate().fadeIn(duration: 1000.ms).slide(duration: 1000.ms),
                         Container(
                           padding: EdgeInsets.symmetric(vertical: 0.8),
                           child: TextField(
@@ -78,17 +78,17 @@ class _PageEntrarState extends State<PageEntrar> {
                                 hintText: "Senha",
                                 hintStyle: TextStyle(color: Colors.grey[400])),
                           ),
-                        ),
+                        ).animate().fadeIn(duration: 1000.ms).slide(duration: 1000.ms),
                       ],
                     ),
-                  ),
+                  ).animate().fadeIn(duration: 1000.ms).slide(duration: 1000.ms),
                   const SizedBox(
                     height: 40,
                   ),
                   const Text(
                     'Esqueceu a senha?',
                     style: TextStyle(color: Color.fromRGBO(240, 255, 255, 1)),
-                  ),
+                  ).animate().fadeIn(duration: 1000.ms).slide(duration: 1000.ms),
                   const Divider(
                     endIndent: 50,
                     indent: 50,
@@ -97,7 +97,7 @@ class _PageEntrarState extends State<PageEntrar> {
                   const Text(
                     'Registrar-se',
                     style: TextStyle(color: Color.fromRGBO(240, 255, 255, 1)),
-                  ),
+                  ).animate().fadeIn(duration: 1000.ms).slide(duration: 1000.ms),
 
 
                   const SizedBox(
@@ -118,7 +118,7 @@ class _PageEntrarState extends State<PageEntrar> {
                           Navigator.push(context, MaterialPageRoute(
                               builder: (context) => PageLista()));
                         },
-                        child: Text(
+                        child: const Text(
                           'Entrar',
                           style: TextStyle(
                               color: Colors.white, fontWeight: FontWeight.bold),

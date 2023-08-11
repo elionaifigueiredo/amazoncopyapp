@@ -31,24 +31,32 @@ class MySquare extends StatelessWidget {
                   child: Text(
 
                     impressora.Title, style: TextStyle(color: Colors.tealAccent),
-                  ),
-                ),
 
+                  ),
+
+                ),
               ),
+
+
               Container(
 
                 child: Image.asset(impressora.Img),
                 height: 140,
                 width: 220,
-              )
+              ),
+
+
 
 
             ],
+
+
 
           ),
 
 
         ),
+
       ),
     );
   }

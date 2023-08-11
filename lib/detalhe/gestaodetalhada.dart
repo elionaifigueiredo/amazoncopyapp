@@ -18,7 +18,7 @@ class _GestaoDetalheState extends State<GestaoDetalhe> {
         title: Text(widget.gestao.nome),
       ),
 
-      body: Center(
+      body: Container(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -26,7 +26,9 @@ class _GestaoDetalheState extends State<GestaoDetalhe> {
               Image.asset(widget.gestao.Img)
 
             ],
+
           ),
+
         ),
       ),
     );
